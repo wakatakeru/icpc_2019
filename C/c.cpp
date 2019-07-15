@@ -68,7 +68,7 @@ int main()
       ch.push_back(w[i]);
       chnum++;
     }
-    outputv(ch, chnum);
+    //outputv(ch, chnum);
     vector<int> noc;
     int nocnum = 0;
     for (int i = 0; i < n; i++)
@@ -79,14 +79,14 @@ int main()
         nocnum++;
       }
     }
-    outputv(noc, nocnum);
+    //outputv(noc, nocnum);
     if (nocnum == 0)
     {
       cout << 0 << endl;
       continue;
     }
     int ans = -1;
-    for (int i = 1; i <= 1e5; i++)
+    for (int i = 1; i <= 1e9; i++)
     {
       if (checkch(ch, chnum, i))
       {
@@ -120,7 +120,7 @@ int main()
       if (flag)
       {
         ans = i;
-        outputv(tv, tvnum);
+        //outputv(tv, tvnum);
         break;
       }
     }
